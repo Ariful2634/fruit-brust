@@ -32,54 +32,48 @@
 <body>
   <header class="lg:w-[80%] lg:mx-auto mt-9 md:px-4 px-3 ">
     <!-- navbar section -->
-
     <nav>
-      <div class="navbar bg-[#F85559] rounded-[600px] lg:px-4">
-        <div class="navbar-start">
-          <div class="dropdown ">
-            <label tabindex="0" class="btn btn-ghost lg:hidden">
-              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
-                stroke="currentColor">
-                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
-              </svg>
-            </label>
-            <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-              <li><a>Home</a></li>
-              <li>
-                <a>About Us</a>
-
-              </li>
-              <li><a>Shop</a></li>
-              <li><a href="">All Fruits</a></li>
-              <li><input class="md:hidden bg-[#FFF]" type="search" name="" id="" placeholder="Search"> </li>
-            </ul>
-            <div class="lg:block md:hidden hidden text-[#FFF] text-[18px] font-[500]">
-              <ul class="menu menu-horizontal px-1">
-                <li><a>Home</a></li>
-                <li>
-                  <a href="">About Us</a>
-                </li>
-                <li><a>Shop</a></li>
-                <li><a href="">All Fruits</a></li>
-              </ul>
-            </div>
-          </div>
-
+      <div class="navbar bg-[#F85559] rounded-[600px] ">
+        <div class="navbar-start  hidden lg:flex">
+          <ul class="menu menu-horizontal px-1">
+           <div class="flex gap-5 text-[#FFF] font-[500]">
+            <p>Home</p>
+            <p>About Us</p>
+            <p>Shop</p>
+            <p>All Fruits</p>
+           </div>
+            
+          </ul>
+          
         </div>
-        <div class="navbar-center  lg:flex">
+        <div class="navbar-center  ">
           <div class="flex items-center gap-2">
             <img src="images/logo.png" alt="">
             <h1 class="text-[#FFF] font-[700] text-3xl">Fruit Burst</h1>
           </div>
         </div>
         <div class="navbar-end">
-          <div class="lg:block hidden md:block ">
+          <div class="lg:block hidden md:hidden ">
             <span><input class="rounded-2xl lg:h-8 lg:w-[250px] pl-3 bg-[#FFF] " type="search " name="" id=""
                 placeholder="Search Here"><i class="fa-solid fa-magnifying-glass relative right-8 "></i></span>
           </div>
+          
+        </div>
+        <div class="dropdown">
+          <label tabindex="0" class="btn btn-ghost lg:hidden">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+          </label>
+          <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box ">
+            <p>Home</p>
+            <p>About Us</p>
+            <p>Shop</p>
+            <p>All Fruits</p>
+            <p><input class="md:block bg-[#FFF] w-8" type="search" name="" id="" placeholder="Search"> </p>
+          </ul>
         </div>
       </div>
     </nav>
+   
 
     <!-- banner section -->
 
